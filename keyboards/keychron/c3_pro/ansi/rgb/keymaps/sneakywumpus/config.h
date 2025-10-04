@@ -31,3 +31,6 @@
 #define MOUSEKEY_MOVE_DELTA 5
 #define MOUSEKEY_MAX_SPEED 7
 #define MOUSEKEY_TIME_TO_MAX 60
+
+// Fine tuning for Control/Caps Lock MT
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY

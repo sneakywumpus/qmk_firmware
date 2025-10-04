@@ -72,6 +72,19 @@ bool dynamic_macro_record_end_user(int8_t direction) {
 
 #endif
 
+#ifdef HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LCTL_T(KC_CAPS):
+            // Immediately select the hold action when another key is pressed.
+            return true;
+        default:
+            // Do not select the hold action when another key is pressed.
+            return false;
+    }
+}
+#endif
+
 void keyboard_post_init_kb(void) {
     gpio_set_pin_output_push_pull(LED_MAC_OS_PIN);
     gpio_set_pin_output_push_pull(LED_WIN_OS_PIN);
