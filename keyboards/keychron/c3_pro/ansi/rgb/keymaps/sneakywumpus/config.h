@@ -24,3 +24,10 @@
 
 // Enable Caps Word with left+right shift
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+
+// Tame mouse keys
+#define MOUSEKEY_DELAY 300
+#define MOUSEKEY_INTERVAL 20
+#define MOUSEKEY_MOVE_DELTA 5
+#define MOUSEKEY_MAX_SPEED 7
+#define MOUSEKEY_TIME_TO_MAX 60
